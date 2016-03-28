@@ -60,14 +60,14 @@
 }
 
 #middle_title {
-    width: 420px;
+    width: 440px;
     padding: 10px;
     margin-left: 30px;
     margin-top: -15px;
     color: white;
     font-family: "Times New Roman", Times, serif;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 50px;
     text-align: justify;
     text-transform: capitalize;
     letter-spacing: 3px;
