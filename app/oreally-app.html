@@ -1,0 +1,43 @@
+<div id="wrapper">
+    <div id="top_bar" [style.background-color]="getColor()"></div>
+    <div id="top_title">{{ model.topText }}</div>
+    <div id="middle_title_wrapper">
+        <img id="middle_image" [src]="model.image">
+        <div id="middle_title" [style.background-color]="getColor()">{{ model.bookTitle }}</div>
+        <div id="sub_title">{{ model.subTitle}} </div>
+    </div>
+    <div id="bottom_wrapper">
+        <div id="bottom_left">O'Really?</div>
+        <div id="bottom_right">{{ model.author }}</div>
+    </div>
+</div>
+
+<div id="form">
+    <div>
+        <label>Color:</label>
+        <input name="color" [(ngModel)]="model.color">
+    </div>
+    <div>
+        <label>Image:</label>
+        <select [(ngModel)]="model.image">
+            <option *ngFor="#img of images" [value]="img">{{img}}</option>
+        </select>
+    </div>
+    <div>
+        <label>Top Text:</label>
+        <input name="top-text" [(ngModel)]="model.topText">
+    </div>
+    <div>
+        <label>Book Title:</label>
+        <input name="book-title" [(ngModel)]="model.bookTitle">
+    </div>
+    <div>
+        <label>Sub Title:</label>
+        <input name="sub-title" [(ngModel)]="model.subTitle">
+    </div>
+    <div>
+        <label>Author:</label>
+        <input name="author" [(ngModel)]="model.author">
+    </div>
+
+</div>
